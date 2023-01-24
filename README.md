@@ -6,4 +6,4 @@
 
 JS Web Projects
 
-- [Form Validator](https://github.com/connorjnel/20-js-web-projects/form-validator)
+- [Form Validator](https://github.com/connorjnel/20-js-web-projects/form-validator/)
