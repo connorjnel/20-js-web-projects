@@ -73,6 +73,13 @@ p {
     -moz-appearance: textfield;
 }
 
+.currency input:hover {
+    appearance: inherit;
+    -moz-appearance: inherit;
+    -webkit-appearance: inherit;
+    -moz-appearance: inherit;
+}
+
 .swap-rate-container {
     display: flex;
     align-items: center;
