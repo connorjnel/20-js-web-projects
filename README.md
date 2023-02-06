@@ -10,4 +10,4 @@ JS Web Projects
 - [Movie Seat Booker](https://connorjnel.github.io/20-js-web-projects/movie-seat-booking/)
 - [Video Player](https://connorjnel.github.io/20-js-web-projects/video-player/)
 - [Exchange Rate Calculator](https://connorjnel.github.io/20-js-web-projects/exchange-rate-calc/)
-- [DOM Array Methods](https://connorjnel.github.io/20-js-web-projects/dom-array/)
+- [DOM Array Method](https://connorjnel.github.io/20-js-web-projects/dom-array/)
