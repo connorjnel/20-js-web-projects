@@ -11,3 +11,4 @@ JS Web Projects
 - [Video Player](https://connorjnel.github.io/20-js-web-projects/video-player/)
 - [Exchange Rate Calculator](https://connorjnel.github.io/20-js-web-projects/exchange-rate-calc/)
 - [DOM Array Method](https://connorjnel.github.io/20-js-web-projects/dom-array/)
+- [Hangman](https://connorjnel.github.io/20-js-web-projects/hangman/)
