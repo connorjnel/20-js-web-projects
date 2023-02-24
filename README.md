@@ -12,3 +12,4 @@ JS Web Projects
 - [Exchange Rate Calculator](https://connorjnel.github.io/20-js-web-projects/exchange-rate-calc/)
 - [DOM Array Method](https://connorjnel.github.io/20-js-web-projects/dom-array/)
 - [Hangman](https://connorjnel.github.io/20-js-web-projects/hangman/)
+- [Meal Finder](https://connorjnel.github.io/20-js-web-projects/meal-finder/)
