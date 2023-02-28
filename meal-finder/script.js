@@ -6,9 +6,24 @@ const resultHeading = document.getElementById('result-heading');
 const single_mealEl = document.getElementById('single-meal');
 const alert = document.getElementById('alert');
 
+// Call random meal
+function getRandomMeal() {
+	// Clear meals and heading
+	mealsEl.innerHTML = '';
+	resultHeading.innerHTML = '';
+	fetch(`https://www.themealdb.com/api/json/v1/1/random.php`)
+		.then((res) => res.json())
+		.then((data) => {
+			const meal = data.meals[0];
+
+			addMealToDOM(meal);
+		});
+}
+
 // Search meal and fetch from API
 function searchMeal(e) {
 	e.preventDefault();
+	alert.hidden = true;
 
 	// Clear single meal
 	single_mealEl.innerHTML = '';
@@ -44,7 +59,7 @@ function searchMeal(e) {
 		// Clear search text
 		search.value = '';
 	} else {
-		alert('Please enter a search term');
+		alert.hidden = false;
 	}
 }
 
@@ -82,7 +97,7 @@ function addMealToDOM(meal) {
         <p>${meal.strInstructions}</p>
         <h2>Ingredients</h2>
         <ul>
-          ${ingredients.map((ing) => `${ing} | `).join('')}
+          ${ingredients.map((ing) => `<li>${ing}</li>`).join('')}
         </ul>
       </div>
     </div>    
@@ -91,6 +106,8 @@ function addMealToDOM(meal) {
 
 // Event Listeners
 submit.addEventListener('submit', searchMeal);
+
+random.addEventListener('click', getRandomMeal);
 
 mealsEl.addEventListener('click', (e) => {
 	const mealID = e.target.closest('.meal-info').dataset.mealid;
