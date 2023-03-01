@@ -13,3 +13,4 @@ JS Web Projects
 - [DOM Array Method](https://connorjnel.github.io/20-js-web-projects/dom-array/)
 - [Hangman](https://connorjnel.github.io/20-js-web-projects/hangman/)
 - [Meal Finder](https://connorjnel.github.io/20-js-web-projects/meal-finder/)
+- [Expense Tracker](https://connorjnel.github.io/20-js-web-projects/expense-tracker/)
