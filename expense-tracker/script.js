@@ -32,11 +32,31 @@ function addTransactionDOM(transaction) {
 	list.appendChild(item);
 }
 
+// Update the balance, income and expense
+function updateValues() {
+	// Create new array with amounts only
+	const amounts = transactions.map((transaction) => transaction.amount);
+	// Add up all amounts
+	const total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2);
+	// Calculate Income
+	const income = amounts
+		.filter((item) => item > 0)
+		.reduce((acc, item) => (acc += item), 0)
+		.toFixed(2);
+	// Calculate Expense
+	const expense = (amounts.filter((item) => item < 0).reduce((acc, item) => (acc += item), 0) * -1).toFixed(2);
+
+	balance.innerText = `£${total}`;
+	money_plus.innerText = `£${income}`;
+	money_minus.innerText = `£${expense}`;
+}
+
 // Init app
 function init() {
 	list.innerHTML = '';
 
 	transactions.forEach(addTransactionDOM);
+	updateValues();
 }
 
 init();
