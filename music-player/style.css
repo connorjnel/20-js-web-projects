@@ -55,6 +55,7 @@ body {
     left: 0;
     animation: rotate 3s linear infinite;
     animation-play-state: paused;
+    border: 2px solid rgba(252, 140, 10, 0.4);
 }
 
 .music-container.play .img-container img {
