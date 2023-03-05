@@ -14,3 +14,4 @@ JS Web Projects
 - [Hangman](https://connorjnel.github.io/20-js-web-projects/hangman/)
 - [Meal Finder](https://connorjnel.github.io/20-js-web-projects/meal-finder/)
 - [Expense Tracker](https://connorjnel.github.io/20-js-web-projects/expense-tracker/)
+- [Music Player](https://connorjnel.github.io/20-js-web-projects/music-player/)
