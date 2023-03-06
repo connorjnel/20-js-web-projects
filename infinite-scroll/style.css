@@ -43,6 +43,7 @@ h1 {
     display: flex;
     width: 80vw;
     max-width: 800px;
+    min-height: 155px;
 }
 
 .post .post-title {
