@@ -15,3 +15,4 @@ JS Web Projects
 - [Meal Finder](https://connorjnel.github.io/20-js-web-projects/meal-finder/)
 - [Expense Tracker](https://connorjnel.github.io/20-js-web-projects/expense-tracker/)
 - [Music Player](https://connorjnel.github.io/20-js-web-projects/music-player/)
+- [Infinite Scroll](https://connorjnel.github.io/20-js-web-projects/infinite-scroll/)
