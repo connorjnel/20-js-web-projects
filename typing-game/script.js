@@ -44,6 +44,12 @@ let time = 10;
 // Init focus on text
 text.focus();
 
+// Init difficulty to value in local
+let difficulty = localStorage.getItem('difficulty') !== null ? localStorage.getItem('difficulty') : 'medium';
+
+// Set difficulty select value
+difficultySelect.value = localStorage.getItem('difficulty') !== null ? localStorage.getItem('difficulty') : 'medium';
+
 // Start counting down
 const timeInterval = setInterval(updateTime, 1000);
 
@@ -88,6 +94,7 @@ function gameOver() {
 }
 
 // Event Listener
+//Typing
 text.addEventListener('input', (e) => {
 	const userWord = e.target.value;
 	if (userWord === randomWord) {
@@ -96,10 +103,27 @@ text.addEventListener('input', (e) => {
 		// Clear input
 		e.target.value = '';
 
-		time += 2;
+		if (difficulty === 'hard') {
+			time += 2;
+		} else if (difficulty === 'medium') {
+			time += 3;
+		} else {
+			time += 5;
+		}
 		updateTime();
 	} else {
 	}
+});
+
+//Settings button
+settingsBtn.addEventListener('click', () => {
+	settings.classList.toggle('hide');
+});
+
+// Settings select difficulty
+settingsForm.addEventListener('change', (e) => {
+	difficulty = e.target.value;
+	localStorage.setItem('difficulty', difficulty);
 });
 
 // Init functions
