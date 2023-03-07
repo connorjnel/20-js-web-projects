@@ -16,3 +16,4 @@ JS Web Projects
 - [Expense Tracker](https://connorjnel.github.io/20-js-web-projects/expense-tracker/)
 - [Music Player](https://connorjnel.github.io/20-js-web-projects/music-player/)
 - [Infinite Scroll](https://connorjnel.github.io/20-js-web-projects/infinite-scroll/)
+- [Typing Game](https://connorjnel.github.io/20-js-web-projects/typing-game/)
