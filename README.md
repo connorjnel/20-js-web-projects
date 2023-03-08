@@ -17,3 +17,4 @@ JS Web Projects
 - [Music Player](https://connorjnel.github.io/20-js-web-projects/music-player/)
 - [Infinite Scroll](https://connorjnel.github.io/20-js-web-projects/infinite-scroll/)
 - [Typing Game](https://connorjnel.github.io/20-js-web-projects/typing-game/)
+- [Speech Text Reader](https://connorjnel.github.io/20-js-web-projects/speech-text-reader/)
