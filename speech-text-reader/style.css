@@ -22,7 +22,7 @@ h1 {
 
 .btn {
     cursor: pointer;
-    background-color: darksalmon;
+    background-color: darkorange;
     border: 0;
     border-radius: 4px;
     color: #fff;
@@ -59,7 +59,7 @@ select:focus {
 }
 
 .text-box select {
-    background-color: darksalmon;
+    background-color: darkorange;
     border: 0;
     color: #fff;
     font-size: 12px;
@@ -104,7 +104,7 @@ main {
 }
 
 .box.active {
-    box-shadow: 0 0 10px 5px darksalmon;
+    box-shadow: 0 0 10px 5px darkorange;
 }
 
 .box img {
@@ -115,7 +115,7 @@ main {
 }
 
 .box .info {
-    background-color: darksalmon;
+    background-color: darkorange;
     color: #fff;
     font-size: 18px;
     letter-spacing: 1px;
