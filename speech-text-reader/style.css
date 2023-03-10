@@ -58,6 +58,15 @@ select:focus {
     transition: all 1s ease-in-out;
 }
 
+.text-box.show {
+    transform: translate(-50%, 0);
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .text-box select {
     background-color: darkorange;
     border: 0;
