@@ -18,3 +18,4 @@ JS Web Projects
 - [Infinite Scroll](https://connorjnel.github.io/20-js-web-projects/infinite-scroll/)
 - [Typing Game](https://connorjnel.github.io/20-js-web-projects/typing-game/)
 - [Speech Text Reader](https://connorjnel.github.io/20-js-web-projects/speech-text-reader/)
+- [Memory Cards](https://connorjnel.github.io/20-js-web-projects/memory-cards/)
