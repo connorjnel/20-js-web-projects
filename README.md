@@ -19,3 +19,4 @@ JS Web Projects
 - [Typing Game](https://connorjnel.github.io/20-js-web-projects/typing-game/)
 - [Speech Text Reader](https://connorjnel.github.io/20-js-web-projects/speech-text-reader/)
 - [Memory Cards](https://connorjnel.github.io/20-js-web-projects/memory-cards/)
+- [Lyrics Search](https://connorjnel.github.io/20-js-web-projects/lyrics-search/)
