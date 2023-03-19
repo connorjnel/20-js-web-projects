@@ -7,10 +7,6 @@ const apiURL = 'https://api.lyrics.ovh';
 
 // Search by song or artist
 async function searchSongs(term) {
-	// fetch(`${apiURL}/suggest/${term}`)
-	// 	.then((response) => response.json())
-	// 	.then((data) => console.log(data));
-
 	const res = await fetch(`${apiURL}/suggest/${term}`);
 	const data = await res.json();
 
@@ -19,24 +15,6 @@ async function searchSongs(term) {
 
 // Show song and artist in DOM
 function showData(data) {
-	// ForEach method
-	// let output = '';
-
-	// data.data.forEach((song) => {
-	// 	output += `
-	//     <li>
-	//     <span><strong>${song.artist.name}</strong> - ${song.title}</span>
-	//     <button class="btn" data-artist="${song.artist.name}" data-songtitle="${song.title}">Get Lyrics</button>
-	//     </li>
-	//     `;
-	// });
-
-	// result.innerHTML = `
-	// <ul class="songs">
-	// ${output}
-	// </ul>
-	// `;
-
 	// Map and join method
 	result.innerHTML = `
     <ul class="songs">
