@@ -1,4 +1,4 @@
-## 20-js-web-projects
+# 20-js-web-projects
 
 20 Web Projects With Vanilla JavaScript
 
