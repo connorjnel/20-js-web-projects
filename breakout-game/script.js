@@ -59,7 +59,7 @@ function draw() {
 	drawScore();
 }
 
-// Instantiate
+// Instantiate Canvas
 draw();
 
 // Event Listeners
