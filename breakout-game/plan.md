@@ -1,8 +1,8 @@
 # Plan
 
-1. Create canvas context
-2. Create and draw ball
-3. Create and draw paddle
+1. Create canvas context - DONE
+2. Create and draw ball - DONE
+3. Create and draw paddle - DONE
 4. Create bricks
 5. Draw Score
 6. Add update() - Animate - requestAnimationFrame(cb)
