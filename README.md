@@ -21,4 +21,4 @@ JS Web Projects
 - [Memory Cards](https://connorjnel.github.io/20-js-web-projects/memory-cards/)
 - [Lyrics Search](https://connorjnel.github.io/20-js-web-projects/lyrics-search/)
 - [Relaxer App](https://connorjnel.github.io/20-js-web-projects/relaxer/)
-- [Breakout Game](https://connorjnel.github.io/20-js-web-projects/breakout-game/)
+- [Breakout](https://connorjnel.github.io/20-js-web-projects/breakout-game/)
