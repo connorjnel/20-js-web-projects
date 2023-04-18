@@ -84,7 +84,7 @@ function drawBricks() {
 		column.forEach((brick) => {
 			ctx.beginPath();
 			ctx.rect(brick.x, brick.y, brick.w, brick.h);
-			// TODO Add dynamic color for brick
+			// TODO Add dynamic color for bricks
 			ctx.fillStyle = brick.visible ? '#4ea8dc' : 'transparent';
 			ctx.fill();
 			ctx.closePath();
