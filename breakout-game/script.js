@@ -56,7 +56,6 @@ console.log(bricks);
 function drawBall() {
 	ctx.beginPath();
 	ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2);
-	// TODO Add dynamic color for ball
 	ctx.fillStyle = '#4ea8dc';
 	ctx.fill();
 	ctx.closePath();
@@ -66,7 +65,6 @@ function drawBall() {
 function drawPaddle() {
 	ctx.beginPath();
 	ctx.rect(paddle.x, paddle.y, paddle.w, paddle.h);
-	// TODO Add dynamic color for paddle
 	ctx.fillStyle = '#4ea8dc';
 	ctx.fill();
 	ctx.closePath();
@@ -84,7 +82,6 @@ function drawBricks() {
 		column.forEach((brick) => {
 			ctx.beginPath();
 			ctx.rect(brick.x, brick.y, brick.w, brick.h);
-			// TODO Add dynamic color for bricks
 			ctx.fillStyle = brick.visible ? '#4ea8dc' : 'transparent';
 			ctx.fill();
 			ctx.closePath();
