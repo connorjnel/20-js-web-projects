@@ -5,9 +5,9 @@
 3. Create and draw paddle - DONE
 4. Create bricks - DONE
 5. Draw Score - DONE
-6. Add update() - Animate - requestAnimationFrame(cb)
-7. Move paddle
-8. Keyboard event handlers to move paddle
+6. Add update() - Animate - requestAnimationFrame(cb) - DONE
+7. Move paddle - DONE
+8. Keyboard event handlers to move paddle - DONE
 9. Move ball
 10. Add wall boundaries
 11. Increase the score when bricks break
