@@ -22,3 +22,4 @@ JS Web Projects
 - [Lyrics Search](https://connorjnel.github.io/20-js-web-projects/lyrics-search/)
 - [Relaxer App](https://connorjnel.github.io/20-js-web-projects/relaxer/)
 - [Breakout](https://connorjnel.github.io/20-js-web-projects/breakout-game/)
+- [New Year Countdown](https://connorjnel.github.io/20-js-web-projects/new-year-countdown/)
