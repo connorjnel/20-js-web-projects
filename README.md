@@ -11,6 +11,7 @@ JS Web Projects
 - [Video Player](https://connorjnel.github.io/20-js-web-projects/video-player/)
 - [Exchange Rate Calculator](https://connorjnel.github.io/20-js-web-projects/exchange-rate-calc/)
 - [DOM Array Method](https://connorjnel.github.io/20-js-web-projects/dom-array/)
+- [Menu Slider](https://connorjnel.github.io/20-js-web-projects/menu-slider/)
 - [Hangman](https://connorjnel.github.io/20-js-web-projects/hangman/)
 - [Meal Finder](https://connorjnel.github.io/20-js-web-projects/meal-finder/)
 - [Expense Tracker](https://connorjnel.github.io/20-js-web-projects/expense-tracker/)
