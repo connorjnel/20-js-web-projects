@@ -23,3 +23,5 @@ JS Web Projects
 - [Relaxer App](https://connorjnel.github.io/20-js-web-projects/relaxer/)
 - [Breakout](https://connorjnel.github.io/20-js-web-projects/breakout-game/)
 - [New Year Countdown](https://connorjnel.github.io/20-js-web-projects/new-year-countdown/)
+- [Sortable List](https://connorjnel.github.io/20-js-web-projects/sortable-list/)
+- [Speak Number Guess](https://connorjnel.github.io/20-js-web-projects/speak-number-guess/)
