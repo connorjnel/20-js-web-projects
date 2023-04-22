@@ -33,7 +33,7 @@ const ball = {
 const paddle = {
 	x: canvas.width / 2 - 40,
 	y: canvas.height - 20,
-	w: 80,
+	w: 150,
 	h: 10,
 	speed: 8,
 	dx: 0,
@@ -56,7 +56,7 @@ console.log(bricks);
 function drawBall() {
 	ctx.beginPath();
 	ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2);
-	ctx.fillStyle = '#4ea8dc';
+	ctx.fillStyle = '#fb5607';
 	ctx.fill();
 	ctx.closePath();
 }
@@ -65,7 +65,7 @@ function drawBall() {
 function drawPaddle() {
 	ctx.beginPath();
 	ctx.rect(paddle.x, paddle.y, paddle.w, paddle.h);
-	ctx.fillStyle = '#4ea8dc';
+	ctx.fillStyle = '#211425';
 	ctx.fill();
 	ctx.closePath();
 }
@@ -82,7 +82,7 @@ function drawBricks() {
 		column.forEach((brick) => {
 			ctx.beginPath();
 			ctx.rect(brick.x, brick.y, brick.w, brick.h);
-			ctx.fillStyle = brick.visible ? '#4ea8dc' : 'transparent';
+			ctx.fillStyle = brick.visible ? '#1982c4' : 'transparent';
 			ctx.fill();
 			ctx.closePath();
 		});
@@ -103,9 +103,75 @@ function movePaddle() {
 	}
 }
 
+// Move Ball
+function moveBall() {
+	ball.x += ball.dx;
+	ball.y += ball.dy;
+
+	// Wall Collision (right/left)
+	if (ball.x + ball.size > canvas.width || ball.x - ball.size < 0) {
+		ball.dx *= -1; // ball.dx = ball.dx * -1
+	}
+
+	// Wall Collision (top/bottom)
+	if (ball.y + ball.size > canvas.height || ball.y - ball.size < 0) {
+		ball.dy *= -1; // ball.dx = ball.dx * -1
+	}
+
+	// console.log(ball.x, ball.y);
+
+	// Paddle collision
+	if (ball.x - ball.size > paddle.x && ball.x + ball.size < paddle.x + paddle.w && ball.y + ball.size > paddle.y) {
+		ball.dy = -ball.speed;
+	}
+
+	// Brick Collision
+	bricks.forEach((column) => {
+		column.forEach((brick) => {
+			if (brick.visible) {
+				if (
+					ball.x - ball.size > brick.x && // left brick side check
+					ball.x + ball.size < brick.x + brick.w && // right brick side check
+					ball.y + ball.size > brick.y && // top brick side check
+					ball.y - ball.size < brick.y + brick.h // bottom brick side check
+				) {
+					ball.dy *= -1;
+					brick.visible = false;
+
+					increaseScore();
+				}
+			}
+		});
+	});
+
+	// Hit bottom wall - Lose
+	if (ball.y + ball.size > canvas.height) {
+		showAllBricks();
+		score = 0;
+	}
+}
+
+// Increase score
+function increaseScore() {
+	score++;
+
+	if (score % (brickRowCount * brickRowCount) === 0) {
+		showAllBricks();
+	}
+}
+
+// Make all bricks appear
+function showAllBricks() {
+	bricks.forEach((column) => {
+		column.forEach((brick) => {
+			brick.visible = true;
+		});
+	});
+}
+
 // Draw Everything
 function draw() {
-	// CLear Canvas
+	// Clear Canvas
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	drawBall();
 	drawPaddle();
@@ -116,7 +182,7 @@ function draw() {
 // Update Canvas drawing and animation
 function update() {
 	movePaddle();
-
+	moveBall();
 	// Draw Everything
 	draw();
 
